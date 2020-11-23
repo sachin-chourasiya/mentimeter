@@ -1,0 +1,91 @@
+#bottum-img{
+    float: left;
+    height: 400px;
+}
+#bottum-img>img{
+    height: 500px;
+    width: 600px;
+    margin-left: 70px;
+}
+#bottum-con{
+    height: 500px;
+    text-align: center;
+    padding-top: 70px;
+}
+#bottum-con>h1,#buttum-text>h2{
+    font-size: 40px;
+}
+#bottum-con>p{
+    color: blue;
+    font-size: 22px;
+}
+#bottum-con>button{
+    border: 2px solid blue;
+    color:blue;
+    height: 50px;
+    border-radius: 5px;
+}
+#bottum-con>button:hover{
+    background-color: blue;
+    color: white;
+}
+#buttum-text{
+    text-align: center;   
+    color: white;
+    background-image: url(https://static.mentimeter.com/static/images/menti-pattern.png);
+    padding-top: 30px;
+    height: 300px;
+}
+#buttum-text>button{
+    height: 50px;
+    width: 180px;
+    background-color: white;
+    color: blue;
+    font-size: 20px;
+    border-radius: 5px;
+}
+#buttum-text>button:hover{
+    background-color: gray;
+}
+#bottum-footer{
+    height: 500px;
+    width: 100%;
+    font-size: 22px;
+    background-color:lightyellow;
+}
+#bottum-wenti,#bottum-features,#bottum-resources,#bottum-details,#bottum-about{
+    float: left;
+    margin:30px 45px;
+}
+#bottum-features>p>a,#bottum-resources>p>a,#bottum-details>p>a,#bottum-about>p>a{
+    text-decoration: none;
+    color: black;
+}
+#bottum-features>p>a:hover,#bottum-resources>p>a:hover,#bottum-details>p>a:hover,#bottum-about>p>a:hover{
+    color: gray;
+}
+#bottum-features>h2,#bottum-resources>h2,#bottum-details>h2,#bottum-about>h2{
+    text-decoration: underline;
+    font-size: 22px;
+}
+#bottum-wenti>img{
+    float: left;
+    width: 30px;
+    height: 26px;
+    padding-top: 33px;
+    padding-right: 8px;
+}
+#bottum-wenti>h2{
+    float: left;
+}
+#bottum-icon{
+    padding-top: 150px;
+}
+#bottum-icon>a>img{
+    height: 30px;
+    width: 30px;
+}
+#bottum-icon>p>img{
+    height: 100px;
+    width: 100px;
+}
