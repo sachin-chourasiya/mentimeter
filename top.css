@@ -124,3 +124,8 @@ section:nth-of-type(4){
 #bottum-inner{
     margin-left:100px ;
 }
+#bottum-section{
+    position: relative;
+    text-align: center;
+    margin-top: 20px ;
+}
