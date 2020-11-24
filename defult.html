@@ -1,20 +1,35 @@
 <!DOCTYPE html>
-<html>
+    <html lang="en">
     <head>
-        <title>Mantimeter</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Top</title>
+
         <link rel="stylesheet" href="top.css">
-        <link rel="stylesheet" href="common_top.css">       
+        <link rel="stylesheet" href="common_top.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+        
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap" >
-        <link rel="canonical" href="https://vimeo.com/401017176"> 
-        <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    
     </head>
+
     <body>
         <nav>
             <div>
-                <ul>
-                    <li><input type="text" placeholder="Enter code to vote"/></li>
-                    <li><button onclick="vote()">Vote</button></li>
-                </ul>
+
+                <form>
+                    <input id= "navInput" type="text" placeholder="Enter code to vote"/>
+                    <button type="submit">Vote</button>
+                </form>
+                                
+                <!-- <ul>
+                    <li><input id= "navInput"type="text" placeholder="Enter code to vote"/></li>
+                    <li id="voteButton">
+                        <button>Vote</button>
+                    </li>
+                </ul> -->
             </div>
             <ul>
                 <li>
@@ -49,6 +64,14 @@
 
             </ul>
 
+            <div id="buttonPink">
+                <p>Mentimeter makes remote & hybrid work easy</p>
+                <button id="learnMoreBox">Learn more</button>
+                <button id="cross">X</button>
+            </div>
+            
+
+
         </nav>
         
         <section id="top1">
@@ -68,6 +91,9 @@
             frameborder="0" allow="fullscreen" allowfullscreen></iframe>
             
         </section>
+
+        <section></section>
+
        <section id="bottum-box"> 
            <h2>Millions of voices have<br> already been heard</h2>
            <div id="bottum-inner">
@@ -77,64 +103,108 @@
             </div>    
 
        </section>
+
         <section>
-        <div id="bottum-img"><img src="https://static.mentimeter.com/content-web/prod/_next/static/images/andrew-hollo-0945db78aec2febf69d18b614a67fe32.png"/></div>
-        <div id="bottum-con">
-            <h1>"I can pose a question easily and within a minute or two, have aggregated responses from every participant."</h1>
-            <p>Andrew Hollo, Workwell Consulting</p>
-            <button>Explore More Stories</button>
-        </div>
-        <div id="buttum-text">
-            <h2>Impress with interactive<br> presentations</h2>
-            <button>Get Started</button>
-        </div>
-        <div id="bottum-footer">
-            <div id="bottum-wenti">
-                <img src="C:\mentimeter\image\img.jpg"/>
-                <h2>Mentimeter</h2></div>
-            <div id="bottum-features">
-                <h2>Features</h2>
-                <p><a href="#">Overview</a></p>
-                <p><a href="#">Live Polling</a></p>
-                <p><a href="#">Word Cloud</a></p>
-                <p><a href="#">Quiz</a></p>
-                <p><a href="#">Q&A</a></p> 
-                <p><a href="#">Powerpoint</a></p>
-                <p><a href="#">Translations</a></p>
+            <p>What is Mentimeter?</p>
+            <div>
+                <div>
+                    <img src="data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MDAgNDQ3Ljk5Ij48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6I2I0Y2NlNTt9LmNscy0ye2ZpbGw6IzBkNmI0NTt9LmNscy0ze2ZpbGw6IzZlNTRiZDt9LmNscy00e2ZpbGw6I2ZmODBhYjt9LmNscy01e2ZpbGw6I2ZmYzczODt9LmNscy02e2ZpbGw6I2ZmNDAzZDt9LmNscy03e2ZpbGw6IzAwZGI5MTt9LmNscy04e2ZpbGw6IzEwMTgzNDt9LmNscy05e2ZpbGw6I2ZmZjt9LmNscy0xMHtmaWxsOiMxOTZjZmY7fTwvc3R5bGU+PC9kZWZzPjx0aXRsZT5NZW50aW1ldGVyX1dlYl9Ib21lcGFnZV8yMDIwPC90aXRsZT48cG9seWdvbiBwb2ludHM9Ijc5OS45OSA0MzkuOTkgNzk5Ljk5IDQ0Ny45OSAwIDQ0Ny45OSAwIDQzOS45OSA4MCA0MzkuOTkgNTIwIDQzOS45OSA3MTkuOTkgNDM5Ljk5IDc5OS45OSA0MzkuOTkiLz48cG9seWdvbiBjbGFzcz0iY2xzLTEiIHBvaW50cz0iNjgwIDMxOS45OCA2ODAgMzU5Ljk5IDY0MC4wMSAzNTkuOTkgNjQwLjAxIDMxOS45OSA2NDAuMDEgMzE5Ljk4IDY4MCAzMTkuOTgiLz48cG9seWdvbiBjbGFzcz0iY2xzLTIiIHBvaW50cz0iNjgwIDI3OS45OCA2ODAgMjgwLjAxIDY3OS45NyAyODAuMDEgNjgwIDI3OS45OCIvPjxyZWN0IGNsYXNzPSJjbHMtMSIgeD0iNjQwLjAxIiB5PSIyNDAiIHdpZHRoPSI0MCIgaGVpZ2h0PSIzOS45OCIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMSIgcG9pbnRzPSI2ODAgMTYwIDY4MCAyMDAgNjQwLjAxIDIwMCA2NDAuMDEgMTk5Ljk5IDY0MC4wMSAxOTAgNjQwLjAxIDE2MCA2ODAgMTYwIi8+PHBvbHlnb24gY2xhc3M9ImNscy0yIiBwb2ludHM9IjY4MCAyNzkuOTggNjc5Ljk3IDI4MC4wMSA2NDAuMDEgMjgwLjAxIDY0MC4wMSAyNzkuOTkgNjQwLjAxIDI3OS45OCA2ODAgMjc5Ljk4Ii8+PHJlY3QgY2xhc3M9ImNscy0xIiB4PSI2MzkuOTkiIHk9IjMxOS45NyIgd2lkdGg9IjAuMDEiIGhlaWdodD0iMC4wMSIvPjxyZWN0IGNsYXNzPSJjbHMtMyIgeD0iNjM5Ljk5IiB5PSIyNzkuOTgiIHdpZHRoPSIwLjAxIiBoZWlnaHQ9IjAuMDEiLz48cmVjdCBjbGFzcz0iY2xzLTEiIHg9IjYzOS45OSIgeT0iMjQwIiB3aWR0aD0iMC4wMSIgaGVpZ2h0PSIzOS45OCIvPjxyZWN0IGNsYXNzPSJjbHMtMSIgeD0iNjM5Ljk5IiB5PSIxOTkuOTkiIHdpZHRoPSIwLjAxIiBoZWlnaHQ9IjAuMDEiLz48cmVjdCBjbGFzcz0iY2xzLTEiIHg9IjYzOS45OSIgeT0iMTkwIiB3aWR0aD0iMC4wMSIgaGVpZ2h0PSI5Ljk4Ii8+PHJlY3QgY2xhc3M9ImNscy0xIiB4PSI2MzkuOTkiIHk9IjE2MCIgd2lkdGg9IjAuMDEiIGhlaWdodD0iMzAiLz48cG9seWdvbiBjbGFzcz0iY2xzLTMiIHBvaW50cz0iNjQwLjAxIDMxOS45OSA2MzkuOTkgMzIwIDYzOS45OSAzMTkuOTkgNjQwLjAxIDMxOS45OSIvPjxwYXRoIGNsYXNzPSJjbHMtNCIgZD0iTTY0MCw4MEg1NjBWMEE4MCw4MCwwLDAsMSw2NDAsODBaIi8+PHJlY3QgY2xhc3M9ImNscy0zIiB4PSI1OTkuOTkiIHk9IjI3OS45OCIgd2lkdGg9IjQwIiBoZWlnaHQ9IjAuMDEiLz48cG9seWdvbiBjbGFzcz0iY2xzLTUiIHBvaW50cz0iMzYwIDI3OS45OSAzNDAgMjc5Ljk5IDM0MCAzNTkuOTkgMzQwIDM2MCAzNjAgMzYwIDM4MC4wMSAzNjAgMzgwLjAxIDM1OS45OSAzODAuMDEgMzMyLjgyIDM4MC4wMSAzMTkuOTkgMzgwLjAxIDI3OS45OSAzNjAgMjc5Ljk5Ii8+PHBhdGggY2xhc3M9ImNscy02IiBkPSJNNDgwLDgwaDgwVjBBODAsODAsMCwwLDAsNDgwLDgwWiIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtNiIgcG9pbnRzPSIyNjAuMDEgMTk5Ljk3IDI2MC4wMSAxOTkuOTkgMjYwLjAxIDI0MCAyNjAuMDEgMjUwIDI2MC4wMSAyNjAgMjYwLjAxIDI2OS45OSAyNjAuMDEgMzU5Ljk5IDI2MC4wMSAzNjAgMjgwLjAxIDM2MCAzMDAuMDEgMzYwIDMwMC4wMSAzNTkuOTkgMzAwLjAxIDMxOS45OCAzMDAuMDEgMjUwIDMwMC4wMSAyNDAgMzAwLjAxIDE5OS45NyAyNzkuOTkgMTk5Ljk3IDI2MC4wMSAxOTkuOTciLz48cG9seWdvbiBjbGFzcz0iY2xzLTciIHBvaW50cz0iNDQyLjM0IDI0MCA0MzkuOTkgMjQwIDQyMC4wMSAyNDAgNDIwLjAxIDI2My43MSA0MjAuMDEgMzE5Ljk5IDQyMC4wMSAzMzAuMzIgNDIwLjAxIDMzMi44MiA0MjAuMDEgMzU5Ljk5IDQyMC4wMSAzNjAgNDYwLjAxIDM2MCA0NjAuMDEgMzU5Ljk5IDQ2MC4wMSAzMzIuODIgNDYwLjAxIDMzMC4zMiA0NjAuMDEgMzE5Ljk5IDQ2MC4wMSAyNDAgNDQyLjM0IDI0MCIvPjxwYXRoIGNsYXNzPSJjbHMtNyIgZD0iTTQwLjgsMFYyNDBIODBWMTIwYTQwLDQwLDAsMCwxLDQwLTQwSDI0MS4yVjM5LjNMMjAwLDBaTTE2MCw1OUg3OS41NlY1Mi44MkgxNjBabTQwLTEzLjUySDc5LjU2VjM5LjNIMjAwWiIvPjxyZWN0IGNsYXNzPSJjbHMtMiIgeD0iNzkuNTYiIHk9IjM5LjMiIHdpZHRoPSIxMjAuNDQiIGhlaWdodD0iNi4xNiIvPjxwYXRoIGNsYXNzPSJjbHMtOCIgZD0iTTYwMCwxOTBWMTYwaDgwVjEyMEgxMjBWNDAwSDY4MFYzNjBINjAwVjMyMGg4MFYyODBINjQwdjBINjAwVjI0MGg4MFYyMDBINjAwWk00MjAsMjQwaDQwVjM2MEg0MjBWMjQwWm0tNDAsODB2NDBIMzQwVjI4MGg0MFpNMzAwLDIwMFYzNjBIMjYwVjIwMGg0MFoiLz48cmVjdCBjbGFzcz0iY2xzLTIiIHg9Ijc5LjU2IiB5PSI1Mi44MiIgd2lkdGg9IjgwLjQ0IiBoZWlnaHQ9IjYuMTYiLz48cmVjdCBjbGFzcz0iY2xzLTkiIHg9IjI0MC4wMSIgeT0iMzU3Ljk5IiB3aWR0aD0iMjQxLjU5IiBoZWlnaHQ9IjQiLz48cGF0aCBjbGFzcz0iY2xzLTEwIiBkPSJNNjgwLDgwSDEyMGE0MCw0MCwwLDAsMC00MCw0MFY0NDBINzIwVjEyMEE0MCw0MCwwLDAsMCw2ODAsODBabTAsMTYwVjQwMEgxMjBWMTIwSDY4MFYyNDBaIi8+PHBvbHlnb24gY2xhc3M9ImNscy0xMCIgcG9pbnRzPSI2MzkuOTkgMzE5Ljk5IDYzOS45OSAzMTkuOTggNjAwIDMxOS45OCA2MDAgMzE5Ljk5IDYwMCAzMzkuOTkgNjAwIDM1OS45OSA2MDAgMzYwIDYwMC4wMSAzNTkuOTkgNjM5Ljk5IDM1OS45OSA2NDAuMDEgMzU5Ljk5IDY0MC4wMSAzMTkuOTkgNjM5Ljk5IDMyMCA2MzkuOTkgMzE5Ljk5Ii8+PHJlY3QgY2xhc3M9ImNscy0xMCIgeD0iNTk5Ljk5IiB5PSIyNDAiIHdpZHRoPSI0MCIgaGVpZ2h0PSIzOS45OCIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMTAiIHBvaW50cz0iNjM5Ljk5IDE5OS45OSA2MzkuOTkgMTkwIDYzOS45OSAxNjAgNjAwIDE2MCA2MDAgMTkwIDYwMCAxOTkuOTkgNjAwIDIwMCA2MzkuOTkgMjAwIDYzOS45OSAxOTkuOTkiLz48cmVjdCBjbGFzcz0iY2xzLTEwIiB4PSIxNjUuMTgiIHk9IjE0OSIgd2lkdGg9IjM0OS42NSIgaGVpZ2h0PSIxMC45OSIvPjwvc3ZnPg=="/>
+                    <p>Prepare</p>
+                    <p>Build interactive presentations with the easy-to-
+                        <br/>use online editor. Add questions, polls, quizzes,
+                        <br/> slides, images, gifs and more to your 
+                        <br/>presentation to create fun and engaging 
+                        <br/>presentations.</p>
+                </div>
+                <div>
+                    <img src="data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2aWV3Qm94PSIwIDAgODAwIDQ0Ny45OSI+PGRlZnM+PHN0eWxlPi5jbHMtMXtmaWxsOm5vbmU7fS5jbHMtMntmaWxsOiMwMGRiOTE7fS5jbHMtM3tmaWxsOiMwZDZiNDU7fS5jbHMtNHtmaWxsOiMxMDE4MzQ7fS5jbHMtNXtmaWxsOiNmZjgwYWI7fS5jbHMtNntmaWxsOiNiNGNjZTU7fS5jbHMtN3tmaWxsOiMxOTZjZmY7fS5jbHMtOHtmaWxsOiNmZmM3Mzg7fS5jbHMtOXtjbGlwLXBhdGg6dXJsKCNjbGlwLXBhdGgpO30uY2xzLTEwe2ZpbGw6I2ZmNDAzZDt9PC9zdHlsZT48Y2xpcFBhdGggaWQ9ImNsaXAtcGF0aCI+PHJlY3QgY2xhc3M9ImNscy0xIiB4PSI0NjYuMzgiIHk9IjI5OC4zMSIgd2lkdGg9IjIyMy4zNCIgaGVpZ2h0PSIxNDMuMjEiLz48L2NsaXBQYXRoPjwvZGVmcz48dGl0bGU+TWVudGltZXRlcl9XZWJfSG9tZXBhZ2VfMjAyMDwvdGl0bGU+PHBvbHlnb24gY2xhc3M9ImNscy0yIiBwb2ludHM9IjYzNC45OCAxODMuODEgNzE2LjQyIDE4My44MSA3NzEuNTEgMjY1LjQ2IDc3MS41MSAzNzUuNTEgNjM0Ljk4IDM3NS41MSA2MzQuOTggMTgzLjgxIi8+PHJlY3QgY2xhc3M9ImNscy0zIiB4PSI2MzguNzMiIHk9IjI2OS42OSIgd2lkdGg9Ijk4LjQiIGhlaWdodD0iNy40MyIvPjxyZWN0IGNsYXNzPSJjbHMtMyIgeD0iNjM4LjczIiB5PSIyODEuOTYiIHdpZHRoPSI2OC45IiBoZWlnaHQ9IjcuNDMiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik0yMjIuMjgsMzA5Ljk0YzAtMTA2LjI1LTg2LjEzLTE5Mi4zOC0xOTIuMzctMTkyLjM4djk2LjE5YTk2LjE5LDk2LjE5LDAsMCwxLDk2LjE5LDk2LjE5WiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTMxOS4yNiw0MDkuMjNhODcuNTQsODcuNTQsMCwwLDAsODcuNTQtODcuNTRIMzYzYTQzLjc3LDQzLjc3LDAsMCwxLTQzLjc3LDQzLjc3WiIvPjxwYXRoIGQ9Ik0zMTkuMjYsNDQwdjEuNTNjMC0uNTMsMC0xLDAtMS41M1oiLz48cGF0aCBjbGFzcz0iY2xzLTQiIGQ9Ik0yMjIuMzYsNDA5LjIxYTguMDgsOC4wOCwwLDEsMCwwLDE2LjE1LDguMDgsOC4wOCwwLDAsMCwwLTE2LjE1WiIvPjxwYXRoIGNsYXNzPSJjbHMtNCIgZD0iTTI4NywxMzQuNkgxNTcuNzJhMTYuMTcsMTYuMTcsMCwwLDAtMTYuMTUsMTYuMTdWMzc2LjkyYTE2LjE1LDE2LjE1LDAsMCwwLDE2LjE1LDE2LjE1SDI4N2ExNi4xNCwxNi4xNCwwLDAsMCwxNi4xNS0xNi4xNVYxNTAuNzdBMTYuMTYsMTYuMTYsMCwwLDAsMjg3LDEzNC42WiIvPjxwYXRoIGNsYXNzPSJjbHMtNCIgZD0iTTYxMCw4Ni4xNUgyNTQuNTl2MzIuM0gyODdhMzIuMzMsMzIuMzMsMCwwLDEsMzAuODcsMjIuODIsMzEuNzYsMzEuNzYsMCwwLDEsMS40Myw5LjVWMzEyLjNoMzIzVjg2LjE1WiIvPjxyZWN0IGNsYXNzPSJjbHMtMiIgeD0iMzY4LjMiIHk9IjE0MS4yOCIgd2lkdGg9IjE2MS41NSIgaGVpZ2h0PSIxNy4wNSIvPjxyZWN0IGNsYXNzPSJjbHMtNSIgeD0iMzY4LjMiIHk9IjE4OC43MSIgd2lkdGg9IjE2MS41NSIgaGVpZ2h0PSIxNy4wNSIvPjxyZWN0IGNsYXNzPSJjbHMtNiIgeD0iNDgzLjY5IiB5PSIxNzcuMDUiIHdpZHRoPSIxMS4xMyIgaGVpZ2h0PSI0MC4zOCIvPjxyZWN0IGNsYXNzPSJjbHMtNiIgeD0iNDI0Ljg4IiB5PSIxMjkuNjEiIHdpZHRoPSIxMS4xMyIgaGVpZ2h0PSI0MC4zOCIvPjxyZWN0IGNsYXNzPSJjbHMtNiIgeD0iMzk1LjM1IiB5PSIyMjYuMzUiIHdpZHRoPSIxMS4xMyIgaGVpZ2h0PSI0MC4zOCIvPjxyZWN0IGNsYXNzPSJjbHMtNiIgeD0iMzk1LjM1IiB5PSIyMjYuMzUiIHdpZHRoPSIxMS4xMyIgaGVpZ2h0PSI0MC4zOCIvPjxyZWN0IGNsYXNzPSJjbHMtMiIgeD0iMTg5LjE1IiB5PSIxOTguNTIiIHdpZHRoPSI2OC40MyIgaGVpZ2h0PSIxNy4wNSIvPjxyZWN0IGNsYXNzPSJjbHMtNSIgeD0iMTg5LjE1IiB5PSIyNDUuOTYiIHdpZHRoPSI2OC40MyIgaGVpZ2h0PSIxNy4wNSIvPjxwYXRoIGNsYXNzPSJjbHMtNyIgZD0iTTY0Mi4yOCw1My44NEgyNTQuNTZhMzIuMzIsMzIuMzIsMCwwLDAtMzIuMjgsMzIuMzF2MzIuM0gxNTcuNzJhMzIuMjksMzIuMjksMCwwLDAtMzIuMjksMzIuMzJWNDA5LjIzQTMyLjMyLDMyLjMyLDAsMCwwLDE0Ny44Nyw0NDBhMzEuNjksMzEuNjksMCwwLDAsOSwxLjUzSDI4Ny44YTMxLjc0LDMxLjc0LDAsMCwwLDktMS41MywzMi4zMSwzMi4zMSwwLDAsMCwyMi40Ni0zMC43N1YzNDQuNjJoMzIzYTMyLjMxLDMyLjMxLDAsMCwwLDMyLjI5LTMyLjMyVjg2LjE1QTMyLjMyLDMyLjMyLDAsMCwwLDY0Mi4yOCw1My44NFptLTQyOCwzNjMuNDZhOC4wOCw4LjA4LDAsMSwxLDE2LjE1LDAsOC4wOCw4LjA4LDAsMCwxLTE2LjE1LDBaTTI4NywzOTMuMDdIMTU3LjcyYTE2LjE1LDE2LjE1LDAsMCwxLTE2LjE1LTE2LjE1VjE1MC43N2ExNi4xNywxNi4xNywwLDAsMSwxNi4xNS0xNi4xN0gyODdhMTYuMTYsMTYuMTYsMCwwLDEsMTYuMTUsMTYuMTdWMzc2LjkyQTE2LjE0LDE2LjE0LDAsMCwxLDI4NywzOTMuMDdaTTY0Mi4yOCwxMzQuNlYzMTIuM2gtMzIzVjE1MC43N2EzMi4zMiwzMi4zMiwwLDAsMC00LjM0LTE2LjE3LDMyLjMzLDMyLjMzLDAsMCwwLTI4LTE2LjE1SDI1NC41OVY4Ni4xNUg2NDIuMjhWMTM0LjZaIi8+PHJlY3QgY2xhc3M9ImNscy03IiB4PSIzNjguODUiIHk9IjIzOC4wMSIgd2lkdGg9IjE2MS41NSIgaGVpZ2h0PSIxNy4wNSIvPjxyZWN0IGNsYXNzPSJjbHMtNyIgeD0iMTg5LjM5IiB5PSIyOTUuMjUiIHdpZHRoPSI2OC40MyIgaGVpZ2h0PSIxNy4wNSIvPjxjaXJjbGUgY2xhc3M9ImNscy04IiBjeD0iNjExLjM3IiBjeT0iMjc5LjU0IiByPSIxMi44MiIvPjxjaXJjbGUgY2xhc3M9ImNscy04IiBjeD0iMjIyLjI4IiBjeT0iMzU1LjI2IiByPSIxMi44MiIvPjxnIGNsYXNzPSJjbHMtOSI+PHBhdGggY2xhc3M9ImNscy0xMCIgZD0iTTU5Myw0ODguNmE4Mi44OCw4Mi44OCwwLDEsMSwwLTE2NS43NloiLz48cGF0aCBjbGFzcz0iY2xzLTUiIGQ9Ik01OTMsMzIyLjg0YTgyLjg4LDgyLjg4LDAsMCwxLDAsMTY1Ljc2WiIvPjwvZz48cmVjdCB5PSI0NDAiIHdpZHRoPSI4MDAiIGhlaWdodD0iOCIvPjxyZWN0IGNsYXNzPSJjbHMtNiIgeD0iMzk1LjM1IiB5PSIyMjYuMzUiIHdpZHRoPSIxMS4xMyIgaGVpZ2h0PSI0MC4zOCIvPjwvc3ZnPg=="/>
+                    <p>Engage</p>
+                    <p>Your audience uses their smartphones to
+                        <br/> connect to the presentation where they can 
+                        <br/>answer questions. Visualize their responses in
+                        <br/> real-time to create a fun and interactive
+                        <br/> experience.</p>
+                </div>
+                <div>
+                    <img src="data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2aWV3Qm94PSIwIDAgODAwIDQ0Ny45OSI+PGRlZnM+PHN0eWxlPi5jbHMtMXtmaWxsOm5vbmU7fS5jbHMtMntmaWxsOiMxOTZjZmY7fS5jbHMtM3tmaWxsOiMxMDE4MzQ7fS5jbHMtNHtjbGlwLXBhdGg6dXJsKCNjbGlwLXBhdGgpO30uY2xzLTV7ZmlsbDojMGQ2YjQ1O30uY2xzLTZ7ZmlsbDojZmY0MDNkO30uY2xzLTd7ZmlsbDojMDBkYTkwO30uY2xzLTh7ZmlsbDojZmZjNjM4O30uY2xzLTl7ZmlsbDojZmY4MGFiO308L3N0eWxlPjxjbGlwUGF0aCBpZD0iY2xpcC1wYXRoIj48cmVjdCBjbGFzcz0iY2xzLTEiIHk9IjcyLjc2IiB3aWR0aD0iODAwIiBoZWlnaHQ9IjM3NS4yMyIvPjwvY2xpcFBhdGg+PC9kZWZzPjx0aXRsZT5NZW50aW1ldGVyX1dlYl9Ib21lcGFnZV8yMDIwPC90aXRsZT48cmVjdCBjbGFzcz0iY2xzLTIiIHg9IjM0Mi44NiIgeT0iMjc3LjU4IiB3aWR0aD0iMTk1LjciIGhlaWdodD0iMTY0Ljc4Ii8+PHJlY3QgY2xhc3M9ImNscy0zIiB4PSIzNDIuODYiIHk9IjI4Ny45NCIgd2lkdGg9IjE5NS43IiBoZWlnaHQ9IjE1NC40MSIvPjxnIGNsYXNzPSJjbHMtNCI+PHBhdGggY2xhc3M9ImNscy01IiBkPSJNNjE1LDMxOS4xOGgwbDUzLjIyLDcwLjI2LDE2LjM4LDIxLjYzLDAsMCwyMy4wNiwzMC40NS4yMy4zVjI4OEExNTMuMjEsMTUzLjIxLDAsMCwwLDYxNSwzMTkuMThaIi8+PHBhdGggY2xhc3M9ImNscy02IiBkPSJNNzA1LjI3LDEwMy4zMWE0Ni4xOCw0Ni4xOCwwLDEsMCwyLjYzLDE1LjM4QTQ2LjE3LDQ2LjE3LDAsMCwwLDcwNS4yNywxMDMuMzFaIi8+PHBvbHlnb24gY2xhc3M9ImNscy02IiBwb2ludHM9IjQ0Ni44NCAzNDguNTYgNDQ2Ljg0IDM3Ny41OSA0NDYuODQgMzgzLjg5IDQ0Ni44NCA0NDEuODcgNDc3LjYgNDQxLjg3IDQ3Ny42IDM4MC4zMyA0NzcuNiAzNDguNTYgNDYxLjY3IDM0OC41NiA0NDYuODQgMzQ4LjU2Ii8+PHBhdGggY2xhc3M9ImNscy03IiBkPSJNNzA3LjY3LDQ0MS41NmwtMjMuMDYtMzAuNDUsMCwwTDY2OC4yLDM4OS40NSw2MTUsMzE5LjE5aDBhMTU0LjM2LDE1NC4zNiwwLDAsMC0zMC4xOSwzMC4zMywxNTMuNTgsMTUzLjU4LDAsMCwwLTI3LjcxLDYxLjU3QTE1NS4zLDE1NS4zLDAsMCwwLDU1NCw0NDEuODZINzA3LjlaIi8+PHBvbHlnb24gY2xhc3M9ImNscy03IiBwb2ludHM9IjQxNi4wNyAzODAuMyA0MTYuMDcgNDQxLjg3IDQ0Ni44MiA0NDEuODcgNDQ2LjgyIDM4My44IDQ0Ni44MiAzODAuMyA0NDYuNTEgMzgwLjMgNDE2LjA3IDM4MC4zIi8+PHJlY3QgY2xhc3M9ImNscy04IiB4PSIzODUuMjkiIHk9IjQxMS4wOCIgd2lkdGg9IjMwLjc2IiBoZWlnaHQ9IjMwLjc5Ii8+PHBvbHlnb24gY2xhc3M9ImNscy05IiBwb2ludHM9IjUyMy4yMyAxMDMuNDkgNDkyLjY0IDEzNC4wNyA0ODQuNjQgMTQyLjA3IDQ3Ny42IDE0OS4xMiA1MTUuODggMTg3LjQgNTIzLjIzIDE5NC43NSA1MjMuMjMgMTgwLjM1IDUyMy4yMyAxMzQuMDcgNTIzLjQyIDEzNC4wNyA1MjMuNDIgMTAzLjMxIDUyMy4yMyAxMDMuNDkiLz48cGF0aCBjbGFzcz0iY2xzLTkiIGQ9Ik0xNDEuMzcsMjg2LjI0QTMwLjc4LDMwLjc4LDAsMSwwLDE1My44OSwzMTEsMzAuNjgsMzAuNjgsMCwwLDAsMTQxLjM3LDI4Ni4yNFoiLz48cGF0aCBjbGFzcz0iY2xzLTkiIGQ9Ik0xMjMuMTIsMTY0LjhhMTUuMzYsMTUuMzYsMCwxLDAtMTUuMzgtMTUuMzZBMTUuMzYsMTUuMzYsMCwwLDAsMTIzLjEyLDE2NC44WiIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMyIgcG9pbnRzPSI2MTkuMTIgMjUwLjY3IDU4NC43OSAyNTAuNjcgNTg0Ljc5IDI1Ny4xOSA2MTEuOTIgMjU3LjE5IDY3Ny4xMiAyNTcuMTkgNjc3LjEyIDI1MC42NyA2MTkuMTIgMjUwLjY3Ii8+PHBvbHlnb24gY2xhc3M9ImNscy0zIiBwb2ludHM9IjU4NC43OSAyNjYuMDYgNTg0Ljc5IDI3Mi41OCA2MDIuODEgMjcyLjU4IDY0Ni4zNCAyNzIuNTggNjQ2LjM0IDI2Ni4wNiA2MDUuNjkgMjY2LjA2IDU4NC43OSAyNjYuMDYiLz48cGF0aCBjbGFzcz0iY2xzLTMiIGQ9Ik0zMjYuMzMsMTM0LjA4SDIxNS40NXY5Mi4zM2g5Mi4zM3Y3LjdIMjE1LjQ1VjM0OS41Mmg5Mi4zM3Y3LjdIMjE1LjQ1djcuN0gyNzd2Ny42OUgyMTUuNDV2Ny42OUgxNTMuODl2NDkuMzFhMTIuMjQsMTIuMjQsMCwwLDAsMTIuMjMsMTIuMjNIMzI2LjMzYTEyLjI0LDEyLjI0LDAsMCwwLDEyLjIzLTEyLjIzVjE0Ni4zMUExMi4yMywxMi4yMywwLDAsMCwzMjYuMzMsMTM0LjA4Wk0yNzcsMjE4LjcySDI0Ni4yM1YyMTFoNjEuNTV2Ny42OVoiLz48cG9seWdvbiBjbGFzcz0iY2xzLTMiIHBvaW50cz0iMTUzLjg5IDIyNi40MSAxNDEuMzcgMjI2LjQxIDYxLjU2IDIyNi40MSA2MS41NiAyMzQuMTEgMTQxLjM3IDIzNC4xMSAxNTMuODkgMjM0LjExIDE1My44OSAyMjYuNDEiLz48cmVjdCBjbGFzcz0iY2xzLTMiIHg9IjYxLjU2IiB5PSIyNDEuOCIgd2lkdGg9IjYxLjU2IiBoZWlnaHQ9IjcuNyIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTY2MS43MywxNjQuODVhNDYuMiw0Ni4yLDAsMCwxLTQzLjU0LTYxLjU0SDUyMy40MnY5MS42M2wtLjE5LS4xOVY0NDEuODhoNjEuNTZ2MEg1NTRhMTU1LjMsMTU1LjMsMCwwLDEsMy4wNy0zMC43OCwxNTMuNTgsMTUzLjU4LDAsMCwxLDI3LjcxLTYxLjU3QTE1My44NywxNTMuODcsMCwwLDEsNzA3LjksMjg4VjExOC42OUE0Ni4xNiw0Ni4xNiwwLDAsMSw2NjEuNzMsMTY0Ljg1Wk02NDYuMzQsMjcyLjU4SDU4NC43OXYtNi41Mmg2MS41NVptLTM0LjQyLTE1LjM5SDU4NC43OXYtNi41Mmg5Mi4zM3Y2LjUyWiIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSI1MjMuMjMgMTAzLjQ5IDUyMy40MiAxMDMuMzEgNTIzLjIzIDEwMy4zMSA1MjMuMjMgMTAzLjQ5Ii8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMzM0LjYyLDEyMy4ySDIxNS40NVY3Mi41M0gzMC43OFYzODAuM0gxNDEuMzd2NTZhMTYuNDYsMTYuNDYsMCwwLDAsMTYuNDYsMTYuNDZIMzM0LjYyYTE2LjQ2LDE2LjQ2LDAsMCwwLDE2LjQ2LTE2LjQ2VjEzOS42NkExNi40NSwxNi40NSwwLDAsMCwzMzQuNjIsMTIzLjJabS0xOTMuMjUsMTYzYTMwLjc3LDMwLjc3LDAsMSwxLTE4LjI1LTZBMzAuNzYsMzAuNzYsMCwwLDEsMTQxLjM3LDI4Ni4yNFptMTIuNTItNTkuODN2Ny43SDYxLjU2di03LjdoOTIuMzNaTTEyMy4xMiwyNDEuOHY3LjdINjEuNTZ2LTcuN1ptMC0xMDcuNzJhMTUuMzYsMTUuMzYsMCwxLDEtMTUuMzgsMTUuMzZBMTUuMzYsMTUuMzYsMCwwLDEsMTIzLjEyLDEzNC4wOFpNMzM4LjU2LDI2NS40MlY0MjkuNjFhMTIuMjQsMTIuMjQsMCwwLDEtMTIuMjMsMTIuMjNIMjc2LjU3djBIMjQ2djBIMTY2LjEyYTEyLjI0LDEyLjI0LDAsMCwxLTEyLjIzLTEyLjIzVjM4MC4zaDYxLjU2di03LjY5SDI3N3YtNy42OUgyMTUuNDV2LTcuN2g5Mi4zM3YtNy43SDIxNS40NVYyMzQuMTFoOTIuMzN2LTcuN0gyMTUuNDVWMTM0LjA4SDMyNi4zM2ExMi4yMywxMi4yMywwLDAsMSwxMi4yMywxMi4yM1YyNjUuNDJaIi8+PHBvbHlnb24gY2xhc3M9ImNscy0yIiBwb2ludHM9IjI0Ni4yMiAyMTEuMDMgMjQ2LjIyIDIxOC43MiAyNzcgMjE4LjcyIDMwNy43OCAyMTguNzIgMzA3Ljc4IDIxMS4wMyAyNzcgMjExLjAzIDI0Ni4yMiAyMTEuMDMiLz48cmVjdCB5PSI0NDAuMzgiIHdpZHRoPSI4MDAuMjMiIGhlaWdodD0iNy42MiIvPjwvZz48L3N2Zz4=" />
+                    <p>Follow-up</p>
+                    <p>Once your Mentimeter presentation is over, 
+                        <br/>share and export your results for further analysis 
+                        <br/>and even compare data over time to measure 
+                        <br/>the progress of your audience.</p>
+                
+                </div>
+
             </div>
-            <div id="bottum-resources">
-                <h2>Resources</h2>
-                <p><a href="#">Blog</a></p>
-                <p><a href="#">Solutions</a></p>
-                <p><a href="#">Templates</a></p>
-                <p><a href="#">Webinars</a></p>
-                <p><a href="#">Compaigns</a></p> 
-                <p><a href="#">Stories</a></p>
+                <!-- <a href="feature.html">Feature</a> -->
+                <button href="feature.html" >Explore features</button>
+
+        </section>
+
+        <section>
+            <div id="bottum-img"><img src="https://static.mentimeter.com/content-web/prod/_next/static/images/andrew-hollo-0945db78aec2febf69d18b614a67fe32.png"/></div>
+            <div id="bottum-con">
+                <h1>"I can pose a question easily and within a minute or two, have aggregated responses from every participant."</h1>
+                <p>Andrew Hollo, Workwell Consulting</p>
+                <button>Explore More Stories</button>
             </div>
-            <div id="bottum-details">
-                <h2>Details</h2>
-                <p><a href="#">Terms of use</a></p>
-                <p><a href="#">Policies</a></p>
-                <p><a href="#">Accessibility</a></p>
-                <p><a href="#">Help Center</a></p>
-                <p><a href="#">Requirements</a></p>
+            <div id="buttum-text">
+                <h2>Impress with interactive<br> presentations</h2>
+                <button>Get Started</button>
             </div>
-            <div id="bottum-about">
-                <h2>About us</h2>
-                <p><a href="#">Press info</a></p>
-                <p><a href="#">The Team</a></p>
-                <p><a href="#">Jobs</a></p>
-                <p><a href="#">Contect us</a></p>
-            </div>
-            <div id="bottum-face">
-                <div id="bottum-icon"> 
-                    <p><img src="C:\mentimeter\image\icon.png"/><br></p>
-                    <a href="#"><img src="http://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/social-facebook-icon.png"/></a>
-                    <a href="#"><img src="https://niftylift.com.au/wp-content/uploads/2018/05/2000px-Linkedin_icon.svg_.png"/></a>
-                    <a href="#"><img src="https://cdn.imgbin.com/13/10/3/imgbin-logo-university-of-delaware-computer-icons-qr-codes-aQdb5fc7EvjiXWNiNQ8gWdxgy.jpg"/></a>
+            <div id="bottum-footer">
+                <div id="bottum-wenti">
+                    <img src="C:\mentimeter\image\img.jpg"/>
+                    <h2>Mentimeter</h2></div>
+                <div id="bottum-features">
+                    <h2>Features</h2>
+                    <p><a href="#">Overview</a></p>
+                    <p><a href="#">Live Polling</a></p>
+                    <p><a href="#">Word Cloud</a></p>
+                    <p><a href="#">Quiz</a></p>
+                    <p><a href="#">Q&A</a></p> 
+                    <p><a href="#">Powerpoint</a></p>
+                    <p><a href="#">Translations</a></p>
+                </div>
+                <div id="bottum-resources">
+                    <h2>Resources</h2>
+                    <p><a href="#">Blog</a></p>
+                    <p><a href="#">Solutions</a></p>
+                    <p><a href="#">Templates</a></p>
+                    <p><a href="#">Webinars</a></p>
+                    <p><a href="#">Compaigns</a></p> 
+                    <p><a href="#">Stories</a></p>
+                </div>
+                <div id="bottum-details">
+                    <h2>Details</h2>
+                    <p><a href="#">Terms of use</a></p>
+                    <p><a href="#">Policies</a></p>
+                    <p><a href="#">Accessibility</a></p>
+                    <p><a href="#">Help Center</a></p>
+                    <p><a href="#">Requirements</a></p>
+                </div>
+                <div id="bottum-about">
+                    <h2>About us</h2>
+                    <p><a href="#">Press info</a></p>
+                    <p><a href="#">The Team</a></p>
+                    <p><a href="#">Jobs</a></p>
+                    <p><a href="#">Contect us</a></p>
+                </div>
+                <div id="bottum-face">
+                    <div id="bottum-icon"> 
+                        <p><img src="C:\mentimeter\image\icon.png"/><br></p>
+                        <a href="#"><img src="http://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/social-facebook-icon.png"/></a>
+                        <a href="#"><img src="https://niftylift.com.au/wp-content/uploads/2018/05/2000px-Linkedin_icon.svg_.png"/></a>
+                        <a href="#"><img src="https://cdn.imgbin.com/13/10/3/imgbin-logo-university-of-delaware-computer-icons-qr-codes-aQdb5fc7EvjiXWNiNQ8gWdxgy.jpg"/></a>
+                    </div>
                 </div>
             </div>
-        </div>
-        </section>
+            </section>
+
+
+
+
+        <script src="top.js"></script>
+        
     </body>
 </html>
