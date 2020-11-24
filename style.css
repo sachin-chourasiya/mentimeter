@@ -63,6 +63,7 @@
 }
 #bottum-features>p>a:hover,#bottum-resources>p>a:hover,#bottum-details>p>a:hover,#bottum-about>p>a:hover{
     color: gray;
+    text-decoration: underline;
 }
 #bottum-features>h2,#bottum-resources>h2,#bottum-details>h2,#bottum-about>h2{
     text-decoration: underline;
