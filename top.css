@@ -94,6 +94,33 @@ section:nth-of-type(2)>iframe{
     left:23%;
 
 }
-section:nth-of-type(3){
-    margin-top:500px ;
+section:nth-of-type(4){
+    margin-top:350px ;
+}
+/* testing part */
+#bottum-box{
+    position: relative;
+    text-align: center;
+    margin-top: 600px;
+}
+#bottum-box>div>div>h1{
+    position: relative;
+    font-size: 70px;
+    float: left;
+    text-decoration: underline;
+}
+#bottum-box>div>div>p{
+    font-size: 20px;
+    margin: 0;
+}
+#bottum-box>h2{
+    position: relative;
+    font-size: 62px;
+}
+#bottum-box>div>div{
+    float: left;
+    margin-left: 200px;
+}
+#bottum-inner{
+    margin-left:100px ;
 }
