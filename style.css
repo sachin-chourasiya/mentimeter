@@ -51,7 +51,7 @@
     height: 500px;
     width: 100%;
     font-size: 22px;
-    background-color:lightyellow;
+    background-color: rgb(236, 237, 239);
 }
 #bottum-wenti,#bottum-features,#bottum-resources,#bottum-details,#bottum-about{
     float: left;
