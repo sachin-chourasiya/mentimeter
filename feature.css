@@ -1,0 +1,181 @@
+/* .topSpace{
+    height:0.5vh;
+} */
+nav{
+    position:fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index:100 ;
+    background-color: white;
+    border-bottom: 1px solid rgb(206, 204, 204);
+}
+nav>ul>li:nth-of-type(n+2)>a{
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: lighter ;
+    color: black;
+    font-family: 'Nunito Sans', sans-serif;
+}
+nav>ul>li:nth-of-type(2)>a{
+    color: blue;
+}
+
+#dummy{
+    height: 20vh;
+    background-color: pink;
+}
+#exploreStories, #build, #present, #analyse, #lastSection{
+    display: flex;
+    height: 75vh;
+    align-items: center;
+    background-color: rgb(233, 233, 233);
+    /* border: 1px solid red; */
+}
+#analyse{
+    height: 50vh;
+}
+
+#exploreStories>img{
+    margin:0% 5% 0% 10%;
+    padding: 1%;
+    /* border: 1px solid black; */
+    height: 500px;
+    width: 40%;
+}
+#exploreStories>div>p:nth-of-type(1){
+    font-size: 30px;
+    text-align: center;
+    line-height: 45px;
+    font-weight: 500;
+    font-family: 'Nunito Sans', sans-serif;
+    margin:0% 2% 0% 0%;
+    margin-top: -10%;
+    /* border: 1px solid black; */
+    width:100%;
+}
+#exploreStories>div>p:nth-of-type(2){
+    color: blue;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+    width:100%;
+}
+#exploreStories>div>button{
+    border: none;
+    border: 2px solid blue;
+    color: blue;
+    background-color: rgb(233, 233, 233);
+    margin: 3% 0% 5% 30%;
+    padding: 1%;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+    /* width:100%; */
+}
+#build, #present, #analyse{
+    background-color: white;
+}
+
+#build>img, #present>img, #analyse>img{
+    margin:0% 5% 0% 15%;
+    padding: 1%;
+    height: 300px;
+    width: 35%;
+}
+#build>div>p, #present>div>p, #analyse>div>p{
+    font-size: 45px;
+    margin-top: -10%;
+    margin-left: 3%;
+    font-weight: 600;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* letter-spacing: 0.03cm; */
+}
+#build>div>div>li, #present>div>div>li, #analyse>div>div>li{
+    margin-left: 0%;
+    font-size: 22px;
+    line-height: 70px;
+    color: gray;
+    list-style: disc;
+}
+#present>div>p {
+    margin-top: -35%;
+}
+#present>div>p, #present>div>div>li{
+    font-family: sans-serif;
+    margin-left: 35%;
+    width: 100%;
+}
+#present>div>div>li{
+    margin-left: 32%;
+}
+#present>img {
+    margin-top: -15%;
+}
+#analyse>div>p{
+    margin-top: -30%;
+}
+#analyse>img{
+    margin-top: -12%;
+    width: 40%;
+    margin-left: 9%;
+}
+#analyse>div>div>li{
+    line-height: 50px;
+
+}
+
+
+#lastSection>p{
+    font-size: 45px;
+    text-align: center;
+    font-family: sans-serif;
+    margin-top: -20%;
+    margin-left: 36%;
+    font-weight: 600;
+    /* border: 1px solid black; */
+
+}
+
+#lastSection>div:nth-of-type(1){
+    margin-left: -58%;
+    margin-top: 7%;
+    margin-bottom: 0%;
+    /* border: 1px solid black; */
+
+}
+#lastSection>div:nth-of-type(n+2){
+    margin-top: 7%;
+    margin-left: 5%;
+
+}
+
+#lastSection>div>img{
+    height: 200px;
+    width: 60%;
+    text-align: center;
+    /* border: 1px solid black; */
+    margin-left: 20%;
+
+}
+#lastSection>div>p{
+    text-align: center;
+}
+#lastSection>div>p:nth-of-type(1){
+    font-size: 25px;
+    font-family: sans-serif;
+    margin-top: -2%;
+}
+#lastSection>div>p:nth-of-type(2){
+    font-size: 18px;
+    font-family: sans-serif;
+}
+#lastSection>div>p:nth-of-type(3){
+    font-size: 15px;
+    font-weight: 600;
+    font-family: sans-serif;
+    color: blue;
+}
+#lastSection>div>p:nth-of-type(3):hover{
+    color: darkblue;
+}
