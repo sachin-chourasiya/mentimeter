@@ -227,28 +227,42 @@ section:nth-of-type(4)>a>button:hover{
     text-align: center;
     margin-top: 100px;
     margin-bottom: 100px;
+    margin-left: 3%;
     display:grid;
+    font-family:'Poppins', sans-serif; 
 }
+
 #bottum-box>div>div>h1{
     position: relative;
-    font-size: 70px;
+    font-size: 60px;
     float: left;
     text-decoration: underline;
+    margin-bottom: 5%;
+
 }
 #bottum-box>div>div>p{
     font-size: 20px;
     margin: 0;
+    font-weight: bold;
 }
+
 #bottum-box>h2{
     position: relative;
-    font-size: 62px;
+    font-size: 45px;
+    line-height: 1.5cm;
+    margin-right: 3%;
+
 }
 #bottum-box>div>div{
     float: left;
     margin-left: 200px;
 }
 #bottum-inner{
-    margin-left:100px ;
+    margin-left:70px ;
+
+}
+#bottum-inner>div:nth-of-type(3)>h1{
+    margin-left: 13%;
 }
 #bottum-section{
     position: relative;
