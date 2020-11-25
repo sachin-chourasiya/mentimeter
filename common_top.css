@@ -1,7 +1,3 @@
-body{
-    margin: 0;
-    padding: 0;
-}
 .topSpace{
     height: 5vh;
 }
@@ -12,7 +8,7 @@ nav{
     left: 0;
     /* z-index:100 ; */
     background-color: white;
-    border-bottom: 1px solid rgb(223, 216, 216);
+    border-bottom: 1px solid rgb(207, 109, 109);
     /* testll */
   
 
