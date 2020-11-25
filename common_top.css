@@ -60,6 +60,7 @@ nav>ul>li>a{
 nav>ul>li>a:hover{
     color: blue;
 }
+
 nav>ul>li:last-of-type>a{
     background-color: rgb(78, 78, 233);
     color: white;
