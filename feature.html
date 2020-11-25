@@ -1,68 +1,122 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Features</title>
-    <link rel="stylesheet" href="feature.css">
-    <link rel="stylesheet" href="common_top.css">
-</head>
-<body>
-    <nav>
-        <!-- <div>
+<html>
+    <head>
+        <title>Mantimeter</title>
+        <link rel="stylesheet" href="feature.css">
+        <link rel="stylesheet" href="common_top.css">       
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap" >
+        <link rel="canonical" href="https://vimeo.com/401017176"> 
+        <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li>
+                    <div>
+                         
+                        <a href="top.html"> <img src="data:image/png;base64,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">
+                        </img></a>
+                    </div>
+                    
+                </li>
+                <li>
+                    <a>Feature</a>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <a href="solution.html">Solutions</a>
+                        <div class="dropdown-content">
+                            <a href="#">Speakers</a>
+                            <a href="#">Business</a>
+                            <a href="#">Education</a>
+                            <a href="#">Private events</a>
+                            <a href="#">Enterprise</a>
 
-            <form>
-                <input id= "navInput" type="text" placeholder="Enter code to vote"/>
-                <button type="submit">Vote</button>
-            </form>
-        </div> -->
+                        </div>
+                    </div>
+                   
+                </li>
+                <li>
+                    <a href="pricing.html">Pricing</a>
+                </li>
+                <li>
+                    <a href="blog.html">Blog</a>
+                    
+                </li>
+                <li>
+                    <a href="login.html">Log in</a>
+                    
+                </li>
+                <li>
+                    <a href="sign.html">Sign up</a>
+                 
+                </li>
 
-        <ul>
-            <li>
-                <div>
-                     <img src="data:image/png;base64,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"
-                      alt ="Mentimeter Logo">
-                </div>
-                
-            </li>
-            <li>
-                <a href="feature.html">Feature</a>
-            </li>
-            <li>
-                <a href="solution.html">Solutions</a>
-               
-            </li>
-            <li>
-                <a href="pricing.html">Pricing</a>
-            </li>
-            <li>
-                <a href="blog.html">Blog</a>
-                
-            </li>
-            <li>
-                <a href="login.html">Log in</a>
-                
-            </li>
-            <li>
-                <a href="sign.html">Sign up</a>
+            </ul>
+
+        </nav>
+        <section id="top1">
+
+            <h1>We make it easy to listen<br> and to be heard</h1>
              
-            </li>
+            <p>Our interactive presentation platform is powerful yet easy-to-<br>use with features that enable you to prepare, present and<br> analyze presentations.</p>
+        </section>
 
-        </ul>
-
-        <!-- <div id="buttonPink">
-            <p>Mentimeter makes remote & hybrid work easy</p>
-            <button id="learnMoreBox">Learn more</button>
-            <button id="cross">X</button>
-        </div> -->
+        <section id="bottum-section">
+            <h2 font-weight="bold" font-family="heading" font-size="5,6,7">Key features</h2>
+            <div id="bottum-gif">
+                <div id="bottum-div">
+                    <ul>
+                        <div id="bottum-site" >
+                            <div><img src="https://th.bing.com/th/id/OIP.QH7k13-9xxS-u9N2wHsufQHaHa?w=165&h=176&c=7&o=5&pid=1.7"/></div>
+                            <span>Build beautiful interactive presentations in the presentation builder.</span>
+                        </div>
+                        <div id="bottum-site-1">
+                            <div><img src="https://th.bing.com/th/id/OIP.QH7k13-9xxS-u9N2wHsufQHaHa?w=165&h=176&c=7&o=5&pid=1.7"/></div>
+                            <span font-family="body" font-size="2">Collect polls, data and opinions from participants using smart devices.</span>
+                        </div>
+                        <div id="bottum-site-2">
+                            <div><img src="https://th.bing.com/th/id/OIP.QH7k13-9xxS-u9N2wHsufQHaHa?w=165&h=176&c=7&o=5&pid=1.7"/></div>
+                            <span font-family="body" font-size="2">Get insights on participants with trends and data export.</span>
+                        </div>
+                    </ul>
+                </div>
+                <div id="bottum-img">
+                    <img src="https://static.mentimeter.com/content-web/prod/_next/static/images/features-a869c9657145d15f7243319d5f2f30a3.gif" alt="Features gif"/>
+                </div>
+            </div>
+        </section>
         
-
-
-    </nav>
-
     <div class="topSpace"></div>
 
-    <section id="dummy"></section>
+    <section id="dummy">
+        <div id="dummy-1">
+            <h2 font-weight="bold" font-family="heading" font-size="5,6,7">Test Mentimeter!</h2>
+            <p font-weight="light" font-size="3,,,4" font-family="body">Enter the code and submit your answer to experience the ease and fun of sharing your voice with Mentimeter.</p>
+        </div>
+        <div id="dummy-2">
+            <div id="dummy-2-1">
+                <div>
+                    <div>
+                        <div>
+                            <iframe src="https://www.mentimeter.com/public/6cf719702669c8b0a4d4bf36bc2bd183/43e50ece3dd1?no_tracking=true" width="100%" height="100%" borderradius="5px">
+                                
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="dummy-2-2">
+                <div id="dummy-2-2-1">
+                    <div>
+                        <div>
+                            <iframe src="https://www.menti.com?focus=false" height="100%" width="350px" ></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section id="exploreStories">
         <img src="https://static.mentimeter.com/content-web/prod/_next/static/images/woman_highlight-2919874be98d8a27c2db71b65f7d071b.png"/>
@@ -149,9 +203,58 @@
     
 
     </section>
-
-    
-
-
-</body>
+        <section>
+        <div id="buttum-text">
+            <h2>Impress with interactive<br> presentations</h2>
+            <button>Get Started</button>
+        </div>
+        <div id="bottum-footer">
+            <div id="bottum-wenti">
+                <img src="C:\mentimeter\image\img.jpg"/>
+                <h2>Mentimeter</h2></div>
+            <div id="bottum-features">
+                <h2>Features</h2>
+                <p><a href="#">Overview</a></p>
+                <p><a href="#">Live Polling</a></p>
+                <p><a href="#">Word Cloud</a></p>
+                <p><a href="#">Quiz</a></p>
+                <p><a href="#">Q&A</a></p> 
+                <p><a href="#">Powerpoint</a></p>
+                <p><a href="#">Translations</a></p>
+            </div>
+            <div id="bottum-resources">
+                <h2>Resources</h2>
+                <p><a href="#">Blog</a></p>
+                <p><a href="#">Solutions</a></p>
+                <p><a href="#">Templates</a></p>
+                <p><a href="#">Webinars</a></p>
+                <p><a href="#">Compaigns</a></p> 
+                <p><a href="#">Stories</a></p>
+            </div>
+            <div id="bottum-details">
+                <h2>Details</h2>
+                <p><a href="#">Terms of use</a></p>
+                <p><a href="#">Policies</a></p>
+                <p><a href="#">Accessibility</a></p>
+                <p><a href="#">Help Center</a></p>
+                <p><a href="#">Requirements</a></p>
+            </div>
+            <div id="bottum-about">
+                <h2>About us</h2>
+                <p><a href="#">Press info</a></p>
+                <p><a href="#">The Team</a></p>
+                <p><a href="#">Jobs</a></p>
+                <p><a href="#">Contect us</a></p>
+            </div>
+            <div id="bottum-face">
+                <div id="bottum-icon"> 
+                    <p><img src="C:\mentimeter\image\icon.png"/><br></p>
+                    <a href="#"><img src="http://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/social-facebook-icon.png"/></a>
+                    <a href="#"><img src="https://niftylift.com.au/wp-content/uploads/2018/05/2000px-Linkedin_icon.svg_.png"/></a>
+                    <a href="#"><img src="https://cdn.imgbin.com/13/10/3/imgbin-logo-university-of-delaware-computer-icons-qr-codes-aQdb5fc7EvjiXWNiNQ8gWdxgy.jpg"/></a>
+                </div>
+            </div>
+        </div>
+        </section>
+    </body>
 </html>
