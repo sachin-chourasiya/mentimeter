@@ -45,7 +45,7 @@
     font-size: 20px;
     border-radius: 5px;
 }
-#buttum-text>button:hover{
+#buttum-text>a>button:hover{
     background-color: rgb(209, 205, 205);
 }
 #bottum-footer{
