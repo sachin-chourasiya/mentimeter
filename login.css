@@ -10,7 +10,17 @@
                          "e"
                          "e"
                          "c"
+                         "d"
                          "d"; 
+}
+#logPage1>a{
+    text-decoration: none;
+}
+
+#id11>a>img{
+    width: 40%;
+    height: 30px;
+    margin-left: -4%;
 }
 
 #id11{
@@ -19,11 +29,7 @@
     margin:3% auto;
     /* background-color: yellow; */
 }
-#id11>img{
-     width: 40%;
-    height: 30px;
 
-}
 #id21{
     grid-area: b;
     font-size: 40px;
@@ -35,6 +41,7 @@
     grid-area:e ;
     color: gray;
     margin-top: 4%;
+    font-size: 20px;;
 }
 
 #id31, #id41{
@@ -92,6 +99,10 @@
     /* background-color: pink; */
     width: 30%;
     margin: 2% auto;
+}
+#msg1, #msg2{
+    color: red;
+    font-size: 15px;
 }
 .detail1>label{
     font-size: 15px;

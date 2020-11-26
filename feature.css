@@ -7,6 +7,13 @@ nav{
     background-color: white;
     border-bottom: 1px solid rgb(206, 204, 204);
 }
+nav>ul>li:nth-of-type(1)>div:nth-of-type(1)>a>img{
+    height: 25px;
+    width:90%;
+    padding: 10px;
+    /* background-color: yellow; */
+}
+
 nav>ul>li:nth-of-type(n+2)>a{
     text-decoration: none;
     font-size: 17px;
@@ -323,10 +330,11 @@ section:first-of-type>p:nth-of-type(1){
 }
 #bottum-img{
     /* display: flex; */
-    margin-bottom: 32px;
+    /* margin-bottom: 20px; */
     width: 50%;
     margin-left: -40%;
     margin-top: 2%;
+
     /* align-items: center; */
     /* -webkit-box-align: center;
     justify-content: center;
@@ -340,6 +348,8 @@ section:first-of-type>p:nth-of-type(1){
     -webkit-box-direction: normal; */
 
 }
+
+
 #dummy-1{
     margin-bottom: 10%;
 }
@@ -387,6 +397,7 @@ section:first-of-type>p:nth-of-type(1){
 }
 #dummy-2-1{
     margin-right: 32px;
+    margin-left:10% ;
     flex: 1 1 auto;
     width: 100%;
     position: relative;
@@ -455,9 +466,9 @@ section:first-of-type>p:nth-of-type(1){
 #dummy-2-2{
     width: 300px;
     position: relative;
-    height: 500px;
+    height: 700px;
     min-height: 0px;
-    margin-right: 300px;
+    margin-right: 200px;
     min-width: 0px;
     align-items: flex-start;
     -webkit-box-align: start;
@@ -466,6 +477,7 @@ section:first-of-type>p:nth-of-type(1){
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     margin-bottom: 10%;
+
 }
 #dummy-2-2-1{
     display: flex;

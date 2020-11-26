@@ -14,6 +14,9 @@
                          "d"; 
 
 }
+#logPage>a{
+    text-decoration: none;
+}
 
 #id1{
     grid-area: a;
@@ -21,7 +24,7 @@
     margin:3% auto;
     /* background-color: yellow; */
 }
-#id1>img{
+#id1>a>img{
      width: 50%;
     height: 35px;
 
@@ -101,7 +104,11 @@
 .detail>label:nth-of-type(1), .detail>label:nth-of-type(2), .detail>label:nth-of-type(3){
     padding-top: 3%;
 }
-.detail>p:nth-of-type(1){
+.detail>P{
+    color: red;
+    font-size: 15px;
+}
+.detail>p:nth-of-type(2){
     margin-top: -0.5%;
     color: gray;
 }

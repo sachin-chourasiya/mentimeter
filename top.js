@@ -1,15 +1,45 @@
-var input = document.getElementById('navInput')
+var input = document.getElementById('navInput');
 var vote = document.getElementById('voteButton');
 var count =0;
+var num =0;
+// input.addEventListener('click', borderBlue)
+
 var cross = document.getElementById('cross')
 cross.addEventListener('click',pinkremove)
 
-input.addEventListener('click', borderBlue)
+var video = document.getElementById('vid')
+video.addEventListener('click', removebag)
+
+function removebag(){
+    num = num+1;
+    if(num == 1){
+        var butn = document.getElementById('vid')
+        butn.style.borderStyle="none";
+        butn.style.fontSize="0";
+        butn.style.padding="0";
+    }
+
+    
+}
+
 
 function borderBlue(event){
+    
     var item = event.target;
-    item.style.border = "3px solid blue"
-    input.removeEventListener('click')
+    item.style.border= "3px solid blue"
+    item.style.outlineStyle = "none";
+
+    var value = input.length;
+    console.log(value)
+    if(value>4){
+        vote.disabled = "true";
+    }else{
+        vote.disabled ="false";
+    }
+    // if(num>1){
+    //     input.removeEventListener('click', borderBlue)
+
+    // }
     // vote.disabled = true;
     // vote.addEventListener('submit', activate)
 }
