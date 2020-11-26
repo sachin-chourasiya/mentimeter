@@ -61,7 +61,9 @@ section:first-of-type>p:nth-of-type(1){
     font-size: 18px;
     font-weight: lighter;
 }
-
+#exploreStories,#build,#present{
+    margin-bottom: 10%;
+}
 #exploreStories>img{
     margin:0% 5% 0% 10%;
     padding: 1%;
