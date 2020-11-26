@@ -6,9 +6,9 @@
 
 -Description of the Website:
 >Website Link :[Mentimeter](https://www.mentimeter.com/)
->With the help of this website, we can buit many interactive and attractive presentations.
->We can collect polls, data and opinions from the participants.
->Also we can export data and take necessary actions.
+-With the help of this website, we can buit many interactive and attractive presentations.
+-We can collect polls, data and opinions from the participants.
+-Also we can export data and take necessary actions.
  
 -Our Work
 > Our team was assigned to replicate the website of **Mentimeter**.
